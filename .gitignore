@@ -1,0 +1,4 @@
+build/
+public/
+.env
+package-lock.json

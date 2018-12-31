@@ -1,0 +1,51 @@
+@import "../variables";
+
+.course-title{
+  margin-top: 20px;
+  font-size: 30px;
+  color: $redAccent;
+}
+
+.course-details{
+  p{
+    font-size: 14px;
+    line-height: 30px;
+    font-family: $subFont;
+    color: $darkGray;
+    margin-top: 10px;
+  }
+}
+
+.get-started-container{
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .course-button, .course-back-button{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-family: $subFont;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .5s ease;
+
+    &:hover{
+      transform: translateY(-5px);
+    }
+  }
+  .course-button{
+    background: darken($primaryColor, 10%);
+  }
+  .course-back-button{
+    background: darken($redAccent, 10%);
+  }
+}

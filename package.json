@@ -1,0 +1,52 @@
+{
+  "name": "learn-adefemiconsult",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "antd": "^3.10.7",
+    "aos": "^3.0.0-beta.6",
+    "axios": "^0.18.0",
+    "javascript-time-ago": "^1.0.32",
+    "jquery": "^3.3.1",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.10",
+    "prop-types": "^15.6.2",
+    "query-string": "^6.2.0",
+    "random-id": "^1.0.1",
+    "react": "^16.6.1",
+    "react-ckeditor-component": "^1.1.0",
+    "react-dom": "^16.6.1",
+    "react-froala-wysiwyg": "^2.9.1",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "react-time-ago": "^3.0.3",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "socket.io": "^2.1.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "homepage": "https://learn.adefemiconsult.com/",
+  "browserslist": [
+    ">0.2%",
+    "not ie 11",
+    "not ie_mob 11",
+    "not dead"
+  ],
+  "devDependencies": {
+    "babel-plugin-import": "^1.11.0",
+    "eslint": "^5.6.0",
+    "react-app-rewire-less": "^2.1.3",
+    "react-app-rewired": "^1.6.2"
+  }
+}

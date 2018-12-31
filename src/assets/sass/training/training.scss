@@ -1,0 +1,121 @@
+@import "../variables";
+.training-view{
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: $lightGray;
+}
+.training-view-inner{
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid darken(white, 20%);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 50px;
+
+  .view-main{
+    flex: 1;
+    min-height: 60vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .message-card{
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid darken(white, 5%);
+      border-radius: 6px;
+      font-family: $subFont;
+      margin: 15px 0;
+
+      .card-id{
+        display: block;
+        margin-bottom: 15px;
+        font-size: 13px;
+        color: darken(white, 70%);
+
+        span{
+          margin-left: 20px;
+          font-size: 11px;
+          font-style: italic;
+        }
+      }
+      .card-message-content{
+        line-height: 30px;
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 600px){
+        .card-id{
+          font-size: 11px;
+
+          span{
+            font-size: 9px;
+          }
+        }
+        .card-message-content{
+          line-height: 30px;
+          font-size: 12px;
+        }
+      }
+    }
+    .message-card.user{
+      background-color: #fff1f1;
+      margin-right: 20%;
+    }
+    .message-card.admin{
+      background-color: #e3fff3;
+      margin-left: 20%;
+    }
+    .message-card.instruction{
+      background-color: #dbd5ff;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .is-typing{
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid darken(white, 5%);
+      border-radius: 6px;
+      font-family: $subFont;
+      margin: 15px 0;
+      font-size: 13px;
+      color: darken(white, 70%);
+      background-color: darken(white, 10%);
+      span{
+        font-style: italic;
+      }
+    }
+
+    .is-typing.user{
+      margin-right: 80%;
+      min-width: 150px;
+    }
+
+    .is-typing.admin{
+      margin-left: 80%;
+      min-width: 150px;
+      float: right;
+    }
+  }
+
+  .send-button{
+    border: none;
+    height: 50px;
+    font-family: $subFont;
+    font-size: 16px;
+    background-color: darken($primaryColor, 10%);
+    color: white;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+}
+
